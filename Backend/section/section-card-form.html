@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content-Form</title>
+    <link rel="stylesheet" href="./style/section-form.css">
+    
+<body>
+
+<div class="form-container">
+    <form action="./post.php" method="POST" enctype="multipart/form-data">
+        <!-- Text input -->
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" class="form-control" placeholder="Enter title" required>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" class="form-control" rows="5" placeholder="Enter a description"></textarea>
+        </div>
+
+        <!-- Image 1 upload -->
+        <div class="form-group">
+            <label for="image1">Upload Image 1:</label>
+            <input type="file" id="image1" name="image1" class="form-control-file" accept="image/*" required>
+        </div>
+
+        <!-- Image 2 upload -->
+        <div class="form-group">
+            <label for="image2">Upload Image 2:</label>
+            <input type="file" id="image2" name="image2" class="form-control-file" accept="image/*" required>
+        </div>
+
+        <!-- Image 3 upload -->
+        <div class="form-group">
+            <label for="image3">Upload Image 3:</label>
+            <input type="file" id="image3" name="image3" class="form-control-file" accept="image/*" required>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
