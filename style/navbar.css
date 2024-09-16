@@ -13,14 +13,18 @@ body {
 /* header design */
 .nav,
 .nav-background {
-    max-width: 1600px;
-}
 
-.background-img {
+    width: auto;
+}
+.main{
     position: relative;
+}
+.background-img {
+    min-width: 1600px;
     min-height: 940px;
     background-image: url('../images/background_img.png');
     object-fit: contain;
+    overflow: hidden;
     background-position: top;
     background-repeat: no-repeat;
 
@@ -63,13 +67,12 @@ body {
     text-decoration: none;
     width: 48px;
     height: 27px;
-    gap: 0px;
-    opacity: 0px;
     color: var(--navlink);
 
 
-
 }
+
+
 
 /* end of header design */
 
@@ -114,48 +117,22 @@ body {
     text-align: left;
     width: 856px;
     height: 252px;
-    gap: 0px;
-    opacity: 0px;
-
 
 }
 
-/* section */
+/* responsive design */
+/* mobile view */
 
-.section-article {
-    position: absolute;
-    top: 1060px;
-    border: 2px solid red;
-    color: black;
-
+@media(max-width:321px){
+    /* navbar */
+.nav-link a{
+   font-size: 27px;
 }
 
-.section-article-title {
-    gap: 0px;
-    opacity: 0px;
-    width: 1143px;
-    height: 58px;
-    font-family: Sora;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 58px;
-    letter-spacing: -0.02em;
-    text-align: left;
+.nav-link{
+    gap: 55px;
+    transform: translateX(-75px);
 
 }
-
-.section-article-para {
-    width: 1076px;
-    height: 84px;
-    top: 1134px;
-    left: 152px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: var(--light-black);
+/*  */
 }
