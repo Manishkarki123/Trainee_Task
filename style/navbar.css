@@ -1,0 +1,161 @@
+:root {
+    --blue: #1e90ff;
+    --white: #FFFFFF;
+    --light-black: #3D3D3D;
+    --navlink: #222222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header design */
+.nav,
+.nav-background {
+    max-width: 1600px;
+}
+
+.background-img {
+    position: relative;
+    min-height: 940px;
+    background-image: url('../images/background_img.png');
+    object-fit: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+.nav-main {
+
+    opacity: 31%;
+    background-color: var(--white);
+}
+
+
+.nav-background {
+    height: 191px;
+    padding: 24px 40px 24px 40px;
+    justify-content: space-between;
+
+}
+
+.nav-link {
+    height: 29px;
+    width: 451px;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.nav-link,
+.nav-background {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    text-decoration: none;
+    width: 48px;
+    height: 27px;
+    gap: 0px;
+    opacity: 0px;
+    color: var(--navlink);
+
+
+
+}
+
+/* end of header design */
+
+/* leadspace design */
+
+.lead-article {
+
+    color: var(--white);
+    width: 856px;
+    height: 382px;
+    top: 279px;
+    gap: 40px;
+    opacity: 0px;
+
+}
+
+.lead-article,
+.section-article {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 153px;
+
+}
+
+.lead-article-title {
+    font-family: Sora;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.lead-article-para {
+    font-family: monospace;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 856px;
+    height: 252px;
+    gap: 0px;
+    opacity: 0px;
+
+
+}
+
+/* section */
+
+.section-article {
+    position: absolute;
+    top: 1060px;
+    border: 2px solid red;
+    color: black;
+
+}
+
+.section-article-title {
+    gap: 0px;
+    opacity: 0px;
+    width: 1143px;
+    height: 58px;
+    font-family: Sora;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.section-article-para {
+    width: 1076px;
+    height: 84px;
+    top: 1134px;
+    left: 152px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--light-black);
+}
